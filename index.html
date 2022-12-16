@@ -1,2 +1,14 @@
+.unselectable {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 <p><img src="testa.png" alt="test"></p>
 <p><a href="">Left</a> |  <a href="">Right</a> | <a href="">Up</a> | <a href="">Down</a> </p>
+
+<img draggable="false" (dragstart)="false;" class="unselectable">
+
